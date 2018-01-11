@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的家乡</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/layui.css"/>
+    <link rel="stylesheet" href="css/article.css"/>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <script type="text/javascript" src="js/layui.js"></script>
+    <canvas id="c_n9" width="1920" height="990"
+            style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
+    <script src="js/canvas-nest.min.js"></script>
+</head>
+<body style="background: rgba(0,0,0,0.13);">
+<div style="width: 1000px; background-color: white; height: 930px;margin: auto">
+    <div class="layui-carousel" id="test1">
+        <div carousel-item>
+            <div><img class="topImg" src="indexImages/top1.jpg"></div>
+            <div><img class="topImg" src="indexImages/top2.jpg"></div>
+            <div><img class="topImg" src="indexImages/top3.jpg"></div>
+            <div><img class="topImg" src="indexImages/top4.jpg"></div>
+            <div><img class="topImg" src="indexImages/top5.jpg"></div>
+        </div>
+    </div>
+    <script src="js/layui.js"></script>
+    <table border="1" cellspacing="0" class="navigation">
+        <tr>
+            <td style="text-align: center"><a href="index.html">首页选项</a></td>
+            <td style="text-align: center"><a href="baimasi.html">白马风景</a></td>
+            <td style="text-align: center"><a href="jinchengfenggunag.html">晋城风光</a></td>
+            <td style="text-align: center"><a href="location.html">地理位置</a></td>
+            <td style="text-align: center"><a href="history.html">历史延续</a></td>
+        </tr>
+    </table>
+    <div class="article">
+        <p class="locaiton_title">历史沿革</p><br/>
+        <p style="font-size: 20px">建制沿革:</p>
+        <hr/>
+        <div class="article_right_top">
+            <img class="article_right_top_img" src="images/location.jpg"/>
+        </div>
+        <pre class="content">   晋城古称建兴、建州、泽州与泽州府晋城老城（清山西省泽州府治图）晋城老城（清山西省泽州府治图）。高都、塔水河、下川、和村、八里坪遗址出土的文物表明，据今两万年前，今晋城市丹河与沁河流域即有人类繁衍生息的足迹。
+            <br/>    远古时期，中华人文始祖尧、舜、禹汤，均活动于今晋南一带，而晋城属“京畿之地”，由此产生了女娲补天、愚公移山、尧封丹朱、蚩尤冶铁、舜“耕历山、渔于获泽”，禹凿石门、商汤桑林祈雨等一系列神话。陶唐时期，尧分天下为九州，晋城全境属冀州之域，帝都畿内。
+            <br/>    虞舜时期，舜分天下为十二州，此属冀州。《墨子》载:舜耕(沁水)历山，渔于获泽（今阳城）。夏代时期，十二州复合为九州，此属冀州。《战国策》载：夏末汤伐桀，桀由安邑迁都于垂（今城区与郊区）。
+<br/>    商代时期，属冀州畿内地，境内有商盖国（今高平境内）。《吕氏春秋》载：商汤桑林筹雨，获雨遂作桑林之乐。（桑林在今阳城境内）周代时期，属冀州畿内地，境内有原国（今沁水西北有原城）。《穆天子传》载：周穆王休于获泽，以观桑者，乃饮于桑林。
+            <br/>    春秋初期，境内为铎狄所杂居，后晋士会灭铎狄，境内各国为晋征服，属晋。
+春秋中期，经过高都入晋，晋取泫氏、获泽，赵浣城泫氏等历史事件，境内形成高都、获泽、泫氏、端氏四大城邑，均属晋国封邑
+        </pre>
+    </div>
+    <div class="article_foot">
+        <p class="foot_text1">版权所有：宋梦圆</p><br/>
+        <p class="foot_text2">地址：山西省晋城市|邮政编码048400</p>
+    </div>
+</div>
+<script>
+    layui.use('carousel', function () {
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            , height: "200px"
+            , width: '1000px' //设置容器宽度
+            , arrow: 'always' //始终显示箭头
+        });
+    });
+</script>
+</body>
+</html>

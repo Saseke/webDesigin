@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的家乡</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/layui.css"/>
+    <script type="text/javascript" src="js/layui.js"></script>
+    <canvas id="c_n9" width="1920" height="990"
+            style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
+    <script src="js/canvas-nest.min.js"></script>
+</head>
+<!--style="background: rgba(0,0,0,0.13);"-->
+<body style="background-color: rgba(0,0,0,0.13);">
+<div style="width: 1000px; background-color: white; height: 910px;margin: auto">
+    <div class="layui-carousel" id="test1">
+        <div carousel-item>
+            <div><img class="topImg" src="indexImages/top1.jpg"></div>
+            <div><img class="topImg" src="indexImages/top2.jpg"></div>
+            <div><img class="topImg" src="indexImages/top3.jpg"></div>
+            <div><img class="topImg" src="indexImages/top4.jpg"></div>
+            <div><img class="topImg" src="indexImages/top5.jpg"></div>
+        </div>
+    </div>
+    <script src="js/layui.js"></script>
+    <table border="1" cellspacing="0" class="navigation">
+        <tr>
+            <td style="text-align: center"><a href="index.html">首页选项</a></td>
+            <td style="text-align: center"><a href="baimasi.html">白马风景</a></td>
+            <td style="text-align: center"><a href="jinchengfenggunag.html">晋城风光</a></td>
+            <td style="text-align: center"><a href="location.html">地理位置</a></td>
+            <td style="text-align: center"><a href="history.html">历史延续</a></td>
+        </tr>
+    </table>
+    <div class="left">
+        <div class="left_top">
+            <img src="images/1.jpg" height="200px" width="300px"/>
+        </div>
+        <div class="left_bottom">
+            <p style="font-size: 15px">新闻公告</p>
+            <hr/>
+            <marquee direction="up">
+                检查期间，执法人员先后来到晋城市鸿辉铸管有限公司、山西晋煤集团金鼎煤机矿业有限公司以及山西兰花科技创业股份有限公司田悦化肥分公司，共发现各类问题24条。市安全生产执法监察大队对其中的9条违法行为进行了立案调查，并依法对这三家企业进行了行政处罚。
+                下一步，市安全生产执法监察大队仍将按照市政府关于安全工作的安排部署，严格按照安全生产和职业健康一体化执法工作要求，继续采取“四不两直”方式，严厉打击各类违法行为，确保全市社会和谐安全稳定。
+            </marquee>
+        </div>
+    </div>
+    <div class="right">
+        <div class="right_top">
+            &nbsp;
+            <p style="font-size: 15px">&nbsp;&nbsp;&nbsp;&nbsp;晋城介绍</p>
+            <hr/>
+            <div class="rigth_top_left">
+                <img class="img2" src="images/2.jpg"/>
+            </div>
+            <br/>
+            <pre>     晋城市，古称建兴、泽州、泽州府，是山西省辖地级市，位于山西省东南部，晋豫两省接壤处，全境居于晋城盆地，总面积9490平方公里，自古为兵家必争之地，素有“河东屏翰、中原咽喉、三晋门户”的美誉晋城市是华夏文化发祥地之一，两万年前便留下高都遗址、塔水河、下川等人类遗址。是荆浩、贾鲁、陈卜、孔三传、张慎言、王国光、陈廷敬等名人故里。包括冶底岱庙、青莲寺、崇寿寺、玉皇庙、阳阿古城、海会寺、开化寺、程颢书院、崇安寺、炎帝陵、柳氏民居以及湘峪古堡、天官王府、皇城相府、长平之战遗址群、羊头山石窟、中华名山析城山、太行至尊王莽岭等众多名胜古迹和自然遗产晋城市古为冶炼之都，有“九头十八匠”之称。是战国“阳阿古剑”产地，境内泽州铁器、兰花炭曾名扬海内 。
+            </pre>
+        </div>
+        <div class="right_bottom">
+            &nbsp;
+            <p style="font-size: 15px">&nbsp;&nbsp;&nbsp;&nbsp;晋城风景照</p>
+            <hr/>
+            <marquee>
+                <img class="indexImg" src="indexImages/1.jpg"/>
+                <img class="indexImg" src="indexImages/2.jpg"/>
+                <img class="indexImg" src="indexImages/3.jpg"/>
+                <img class="indexImg" src="indexImages/4.jpg"/>
+            </marquee>
+        </div>
+        <div style="clear: both">
+
+        </div>
+    </div>
+    <div class="foot">
+        <p class="foot_text1">版权所有：宋梦圆</p><br/>
+        <p class="foot_text2">地址：山西省晋城市|邮政编码048400</p>
+    </div>
+</div>
+<script>
+    layui.use('carousel', function () {
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            , height: "200px"
+            , width: '1000px' //设置容器宽度
+            , arrow: 'always' //始终显示箭头
+        });
+    });
+</script>
+</body>
+</html>

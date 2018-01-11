@@ -1,0 +1,56 @@
+.article {
+    margin: 0;
+    padding: 0;
+    /*background-color: #b2b2b2;*/
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 35px;
+    padding-left: 250px;
+    padding-top: 40px;
+}
+
+.locaiton_title {
+    font-size: 35px;
+    padding-left: 400px;
+    padding-top: 40px;
+}
+
+.content {
+    font-size: 14px;
+    color: #333;
+}
+
+.article_right_top {
+    float: right;
+    height: 200px;
+    width: 300px;
+}
+
+.article_right_top_img {
+    width: 280px;
+    height: 180px;
+    padding: 10px 10px 10px 10px;
+}
+
+.article_foot {
+    background-color: #2F4056;
+    width: 1000px;
+    height: 120px;
+    margin: 150px 1px 5px 1px;
+}
+.baimasi_foot{
+    background-color: #2F4056;
+    width: 1000px;
+    height: 120px;
+    /*margin: 30px 1px 5px 1px;*/
+    padding-top: 10px;
+}
+.view_foot{
+    background-color: #2F4056;
+    width: 1000px;
+    height: 120px;
+    margin: 68px 1px 5px 1px;
+}

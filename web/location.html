@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的家乡</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/layui.css"/>
+    <link rel="stylesheet" href="css/article.css"/>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <script type="text/javascript" src="js/layui.js"></script>
+    <canvas id="c_n9" width="1920" height="990"
+            style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
+    <script src="js/canvas-nest.min.js"></script>
+</head>
+<body style="background: rgba(0,0,0,0.13);">
+<div style="width: 1000px; background-color: white; height: 930px;margin: auto">
+    <div class="layui-carousel" id="test1">
+        <div carousel-item>
+            <div><img class="topImg" src="indexImages/top1.jpg"></div>
+            <div><img class="topImg" src="indexImages/top2.jpg"></div>
+            <div><img class="topImg" src="indexImages/top3.jpg"></div>
+            <div><img class="topImg" src="indexImages/top4.jpg"></div>
+            <div><img class="topImg" src="indexImages/top5.jpg"></div>
+        </div>
+    </div>
+    <script src="js/layui.js"></script>
+    <table border="1" cellspacing="0" class="navigation">
+        <tr>
+            <td style="text-align: center"><a href="index.html">首页选项</a></td>
+            <td style="text-align: center"><a href="baimasi.html">白马风景</a></td>
+            <td style="text-align: center"><a href="jinchengfenggunag.html">晋城风光</a></td>
+            <td style="text-align: center"><a href="location.html">地理位置</a></td>
+            <td style="text-align: center"><a href="history.html">历史延续</a></td>
+        </tr>
+    </table>
+    <div class="article">
+        <p class="locaiton_title">地理位置</p><br/>
+        <p style="font-size: 20px">位置:</p>
+        <hr/>
+        <pre class="content">    晋城古称泽州府，位于山西省东南部，丹河、沁河流域中下游，晋城全市总面积9490平方公里，东西宽160公里，南北长100公里，地理坐标为北纬35度11'-36度04'，东经111°55'-113°7'，市区面积149.6平方公里。东、南依太行、王屋二山与河南省新乡、济源、焦作交界，西依中条山与临汾、运城衔接，北依丹朱岭、金泉山等山脉与长治接壤。
+            <br/>    控扼晋豫咽喉，俯视千里中原，历来是兵家必争之地，发挥着承东启西、沟通南北的重要作用，战国军事家吴起称之为“夏桀之国，左天门之阴，右天溪之阳，卢泽在其北，伊洛出其南，有此险也”。可见晋城地理位置的重要
+        </pre>
+    </div>
+    <div class="article">
+        <p style="font-size: 20px">地貌:</p>
+        <hr/>
+        <pre class="content">    晋城市全境位于晋城盆地之中 ， 即丹河、沁河中下游流域的盆地。全市平面轮廓略呈卵形，整个地区的地势呈北高，中、南部低的簸箕状。境内平原、丘陵、山地分别占全市总面积的12.9%、28.5%、58.6%。其中平原1221.6平方公里，丘陵2704平方公里，山地5564.4平方公里。
+            <br/>    晋城市全境平均海拔600至700米，最高点为海拔2322米的中条山舜王坪，最低处是丹河、沁河下游河谷地，海拔接近300米。
+
+        </pre>
+    </div>
+    <div class="article_foot">
+        <p class="foot_text1">版权所有：宋梦圆</p><br/>
+        <p class="foot_text2">地址：山西省晋城市|邮政编码048400</p>
+    </div>
+</div>
+<script>
+    layui.use('carousel', function () {
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            , height: "200px"
+            , width: '1000px' //设置容器宽度
+            , arrow: 'always' //始终显示箭头
+        });
+    });
+</script>
+</body>
+</html>
